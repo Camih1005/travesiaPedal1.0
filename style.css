@@ -1,0 +1,1012 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Goldman:wght@400;700&family=Sedgwick+Ave&display=swap');
+*{
+    font-family: "Bebas Neue", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar::-moz-scrollbar-thumb {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-thumb::-moz-scrollbar-thumb {
+	background-color: #d71a1a86;
+  background-size: cover;
+  background-position: center;
+	border-radius: 5px;
+  filter: invert(2);
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #f9a600f7;
+}
+/* NAV BAR */
+
+.videoCel{
+    display: none;
+}
+
+.navhamburguer,.Hamburguesa,.claseHAmburguerCont{
+    display: none;
+}
+
+
+
+#mainHamburguer{
+    display: none;
+}
+
+header{
+    position: fixed;
+    width: 97.9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.304);
+    -webkit-backdrop-filter: blur(0px);
+   backdrop-filter: blur(10px);
+    padding: 5px 20px 5px 20px;
+    z-index: 10;
+    
+
+
+}
+header a{
+    
+        background: linear-gradient(#3EE5B3,#FEBC53);
+        -webkit-background-clip: text;
+        color: transparent;  
+        text-decoration: none;
+        -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.237);
+  transition: 0.2s ease-out all;
+
+    
+     
+
+}
+header a:hover{
+    scale: 1.1;
+    transition: 0.2s ease-out all;
+}
+
+
+/* BANNER PRINCIPAL */
+.viewmorenone{
+    display: none;
+}
+
+.viewmore{
+    position: absolute;
+    bottom: 20px;
+    z-index: 20;
+    filter:invert(1);
+    animation: mover 1.5s ease-in-out infinite;
+    
+}
+.viewmore a{
+    text-decoration: none;
+    color: #000000;
+   
+}
+
+.bannercontainer{
+      background-image: url("./img/destapado.png");  
+      background-position: bottom 10%;
+      background-size: cover;
+   backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     overflow: hidden;
+     mask-image: linear-gradient(rgb(0, 0, 0) 98%,transparent);
+    
+    }
+
+    .containerTitle img {
+        position: absolute;  
+        width: 0; 
+        opacity: 0; 
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        animation: aparecer 0.5s ease forwards, mover 3s ease-in-out infinite; 
+        animation-delay: 2.5s; 
+        transition: width 0.5s ease, opacity 0.5s ease; 
+        z-index: 19;
+    }
+.Rin {
+   position: absolute;
+    z-index: 10;
+    max-width: 26%;
+    left: 33%;
+    bottom: 40%;
+    animation:  rotRin 20s infinite linear,aparecer 0.5s ease forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+
+/* .banner1 .rueda{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation-name: rotate;
+     animation-duration:  5s;
+     animation-fill-mode: forwards;
+     animation-range: 0 1200px;
+    left: -300px;
+        z-index: 21;
+        top: 50%;
+        
+
+
+} */
+/* container logo */
+.containerTitle{
+    width: 100%;
+    height: 100vh;
+    z-index: 19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.logo img{
+ max-width: 180px;
+ height: 50px;
+}
+
+/* .lineaShadow{
+    width: 350px;
+    z-index: 16;
+    position: absolute;
+    left: -200px;
+    top: 102%; 
+    padding: 0px;
+    animation-name: LineBlack;
+     animation-duration: 5s;
+     animation-fill-mode:forwards;
+     border-radius: 50%;
+     background-color: rgba(0, 0, 0, 0.177);
+     box-shadow: 12px -30px 20px 8px rgba(31, 31, 31, 0.427);
+     
+
+   
+} */
+/* BANNER 2 MUJERES IMAGENES */
+
+.BiciMujeres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    height: 100vh;
+     overflow: hidden;
+     background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    
+}
+
+
+
+.Btn{
+    position: fixed;
+    left:1%;
+    bottom: 5%;
+    border-radius: 50%;
+    border: none;
+    -webkit-border-radius:50%;
+    background-color: rgba(81, 81, 81, 0.468);
+    animation: subir 3s infinite  both;
+    z-index: 30;
+}
+.Btn:hover{
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.slider input{
+    visibility: hidden;
+    display: none;
+}
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+    animation: blur 2s ease-in-out 3s forwards;
+    margin: 0
+
+};
+
+#background-video:nth-child(2) {
+    filter: blur(10px); /* Aplica el desenfoque al video */
+    transition: filter 5s ease; /* Transición suave para el desenfoque */
+}
+.bannercontainer.fade-out-video #background-video {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+ 
+}
+.bannercontainer.fade-none-video #background-video {
+    display:none;
+}
+
+@keyframes blur {
+    0% { filter: blur(0px); }
+    100% { filter: blur(1px); } /* Valor de desenfoque */
+}
+
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(246, 246, 246);
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition:  300ms ease-in-out;
+}
+
+.buttons label:hover{
+    scale: 1.2;
+    opacity: 0.5;
+}
+
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.slider input:nth-child(4):checked ~ .buttons label:nth-child(4),
+.slider input:nth-child(5):checked ~ .buttons label:nth-child(5),
+.slider input:nth-child(6):checked ~ .buttons label:nth-child(6),
+.slider input:nth-child(7):checked ~ .buttons label:nth-child(7)
+{
+    opacity: 1;
+    scroll-margin: 1.2;
+    width: 40px;
+}
+
+.content{
+    position: relative;
+    width: 750vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+.firstslide,.secondslide,.thirdslide,.fourslide,.fiveslide,.sixslide,.sevenslide{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6da3c);
+    
+}
+
+.firstslide{
+    background: url("./img/ImagenesFb/2.png");
+    background-size: cover;
+    background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  
+}
+.secondslide{
+    background: url("./img/ImagenesFb/1.png");
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 98%, transparent);
+    background-color: #00000000; */
+}
+
+.thirdslide{
+    background: url("./img/ImagenesFb/3.png");
+    background-size: cover;
+    background-color: #25d36502;
+
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 80%, transparent); */
+}
+.fourslide{
+    background: url("./img/ImagenesFb/4.png");
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 80%, transparent); */
+}
+.fiveslide{
+    background: url("./img/ImagenesFb/5.png");
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 80%, transparent); */
+}
+.sixslide{
+    background: url("./img/ImagenesFb/6.png");
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 80%, transparent); */
+}
+.sevenslide{
+    background: url("./img/ImagenesFb/7.png");
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%), 
+    linear-gradient(to top, rgb(0, 0, 0) 80%, transparent); */
+}
+
+.slider input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+
+.slider input:nth-child(2):checked ~ .content{
+    left: -100vw;
+}
+
+.slider input:nth-child(3):checked ~ .content{
+    left: -200vw;
+}
+.slider input:nth-child(4):checked ~ .content{
+    left: -300vw;
+}
+.slider input:nth-child(5):checked ~ .content{
+    left: -400vw;
+}
+.slider input:nth-child(6):checked ~ .content{
+    left: -500vw;
+}
+.slider input:nth-child(7):checked ~ .content{
+    left: -600vw;
+}
+
+/* RUTA SESION */
+.ContRuta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+}
+.RutaSection{
+    width: 80%;
+    height: 100%;
+    /* position: relative;
+    left: 18%; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0;
+    
+    
+}
+#rutavideo{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.Descripcion2{
+    text-align: center;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    margin: 50px auto;
+    
+}
+/* ABOUT WE */
+
+.Aboutwe{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 200px;
+    width: 100vw;
+    height: 100vh;
+    column-gap: 10px;
+    margin: 0 auto;
+        
+}   
+
+.Aboutwe .TextAbout{
+    color: rgb(255, 255, 255);
+    position: relative;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+h4{
+    color: red;
+    margin: 100px 10px;
+    font-size: 25px;
+}
+.Aboutwe p{
+    margin-bottom: 110px;
+}
+
+.CarruselAbout{
+    display: flex;
+   
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.CarruselAbout::-webkit-scrollbar {
+	width: 5px;
+}
+
+.CarruselAbout::-webkit-scrollbar-thumb {
+	background-color: #ff0011ab;
+  background-size: cover;
+  background-position: center;
+	border-radius: 5px;
+
+}
+/* PRODUCTOS */
+.ContainerProductos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    border: solid 1px rgba(255, 0, 0, 0);
+   position: relative;
+    margin: 0 auto;
+    top: 200px;
+    gap: 40px;
+    color: rgb(0, 0, 0);
+ 
+}
+.P1,.P2,.P3{
+    margin: 10px;
+    width: 400px;
+    height: 600px;
+    border: solid 2px rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #ffce9a70;
+    padding: 5px;
+}
+h6{
+font-size: 14px;
+text-align: center;
+
+}
+/* .i:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 6px black;
+} */
+
+
+.i img{
+width: 400px;
+position: relative;
+transition: all 3s ease;
+}
+.i img:hover{
+    transition: all 3s ease;
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+}
+.ContainerProductos a{
+    width: 60%;
+    background-color: rgb(24, 24, 253);
+    text-align: center;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.ContainerProductos a:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+
+/* ANIMACIONESSS */
+
+@keyframes rotRin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        width: 0; /* Ancho inicial */
+        opacity: 0; /* Opacidad inicial */
+    }
+    to {
+        width: 50%; /* Ancho final */
+        opacity: 1; /* Opacidad final */
+    }
+}
+
+@keyframes mover {
+    0%, 100% {
+        transform: translateY(-8px); /* Movimiento hacia arriba y hacia abajo */
+    }
+    50% {
+        transform: translateY(8px); /* Movimiento hacia arriba y hacia abajo */
+    }
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+
+  .SdaSection{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 1% cover 50%;
+}
+
+
+
+@keyframes LineBlack{
+    0%{
+       
+        
+        transform:  translateX(0);
+        
+    }
+    
+    100%{
+        box-shadow: 12px -30px 50px 28px rgba(0, 0, 0, 0.68);
+        transform:  translateX(190vh);
+        width: 450px;
+    }
+}
+
+
+ @keyframes rotate {
+        0% {
+            transform: translateX(0) rotate(0deg);
+            transition: all 0.5s;
+        
+        }
+        100% {
+            transform: translateX(100vw) rotate(360deg);
+            transition: all 0.5s;
+            
+        }
+
+  } 
+  
+
+/* celular medida */
+   @media only screen and (min-width: 320px) and (max-width: 1024px) {
+   
+
+    @keyframes changeText{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-900px);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+            transform: translateX(0) rotate(0deg);
+            transition: all 0.5s;
+        
+        }
+        100% {
+            transform: translateX(130vw) rotate(360deg);
+            transition: all 0.5s;
+            
+        }
+
+  } 
+  /* @keyframes LineBlack{
+    0%{
+       
+        
+        transform:  translateX(0);
+        
+    }
+    
+    100%{
+        
+        transform:  translateX(60vh);
+        width: 450px;
+    }
+} */
+
+.bannercontainer{
+    background-image: url("./img/wpp/7.jpg");  
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+
+
+.containerTitle img{ 
+    width:auto ; 
+    height: auto;
+    z-index: 13;
+    position: absolute;
+    animation-delay: 0.1s;
+    
+   
+}
+
+.Rin {
+    position: absolute;
+    z-index: 10;
+    max-width: 40%;
+    left: 25%;
+    top: 10%;
+    
+    animation-delay: 0.1s;
+
+}
+
+    /* .banner1 .Rueda{
+        width: 200px;
+        height: 200px;
+         animation-range: 0     2400px;
+        left: -300px;
+    
+    } */
+
+    .lineaShadow{
+        width: 450px;
+        left: -200px;
+        top: 102%; 
+        padding: 0px;
+        animation-name: LineBlack;
+         animation-duration: 6s;
+         animation-fill-mode:forwards;
+         animation-timeline: scroll(root);
+         animation-range: 0 3300px;
+         border-radius: 50%;
+         background-color: rgba(0, 0, 0, 0.177);
+         box-shadow: 12px -110px 20px 8px rgba(31, 31, 31, 0.427);
+         
+         .firstslide,.secondslide,.thirdslide,.fourslide,.fiveslide,.sixslide,.sevenslide{
+            position: relative;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        } 
+       
+
+  }
+
+  .firstslide,.secondslide,.thirdslide,.fourslide,.fiveslide,.sixslide,.sevenslide{
+    background-size:cover;
+    background-position: center;
+    background-attachment:local;
+}
+
+
+  .BiciMujeres{
+   height: 100vh;
+   width: 100%;
+  }
+  .BiciMujeres img{
+    width: 300px;
+    height: auto;
+    
+}
+/* .RutaSection{
+    width: 100%;
+    height: 100vh;
+    
+} */
+.MapaV iframe{
+    width: 100%;
+    height: 300px;
+    border: solid 8px;
+    border-style: double;
+    
+
+}
+.MapaV{
+    position: relative;
+    right:14%;
+    top: 20%;
+margin: 0;
+width: 90%;
+}
+.Descripcion2{
+      width: 90%;
+    margin: 45px auto; 
+    right:1%;
+    font-size: 15px;
+}
+  
+
+  /* MENU HAMBURGUEASA */
+  header{
+  display: none;
+}
+#mainHamburguer a{
+    background: linear-gradient(#3EE5B3,#FEBC53);
+    -webkit-background-clip: text;
+    color: transparent;  
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+font-size: 25px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.237);
+transition: 0.2s ease-out all;
+}
+#mainHamburguer{
+    display: none;
+}
+
+#cont2ham{
+    
+    display: flex;
+    flex-direction: column;
+   height: 100vh;
+   width: 50%;
+   position: fixed;
+   z-index: 100;
+   justify-content: space-evenly;
+   align-items: center;
+   /* backdrop-filter: blur(60px); */
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   right: 0;
+   text-decoration: none;
+    
+}
+
+  .Hamburguesa{
+    position: fixed;
+    z-index: 101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+}
+
+
+
+
+  .checkboxtoggler {
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    cursor: pointer;
+  }
+  
+  .line-1 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-2 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-3 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  #toggleChecker {
+    height: 3em;
+    width: 100%;
+    display: none;
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+    
+    -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+    -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  /* whatsapp cel */
+
+  .whatsapp {
+    position: fixed;
+    right:3%;
+    bottom: 5%;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(30, 215, 1);
+    animation: subir 3s infinite  both;
+    z-index: 30;
+    
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+  html{
+    scroll-behavior: smooth;
+    
+}
+.banner1{
+    overflow: hidden;
+}
+.CarruselAbout{
+    height: 100vh;
+    
+}
+ .Aboutwe{
+   height: 100vh;
+   margin: 5px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+} 
+.Aboutwe img{
+    width: 100vw;
+    height: auto;
+    margin: 15px;
+}
+.imgAbout{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.Aboutwe p{
+  font-size: 15px;  
+}
+.imga1{
+    display: none;
+}
+.viewmore{
+    bottom: 50px;
+}
+.claseHAmburguerCont{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+}
+#rutavideo{
+   height: 500px;
+   width: 100%;
+}
+
+.RutaSection{
+    width: 100%;
+    height: 100%;
+   
+    
+    
+}
+.videoPc{
+display: none;
+}
+.videoCel{
+    display: flex;
+    z-index: 150;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes aparecer {
+    from {
+        width: 0; /* Ancho inicial */
+        opacity: 0; /* Opacidad inicial */
+    }
+    to {
+        width: 70%;
+        top: 25%; /* Ancho final */
+        opacity: 1; /* Opacidad final */
+    }
+}
+
+} 
