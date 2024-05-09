@@ -319,14 +319,15 @@ header a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6da3c);
+    
     
 }
 
 .firstslide{
-    background: url("./img/wpp/7.jpg");
+    background: url("./img/ImagenesFb/3.png");
     background-size: cover;
-    background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
+   
   
 }
 .secondslide{
@@ -430,6 +431,28 @@ header a:hover{
     
 }
 /* ABOUT WE */
+
+.carruselCen{
+    display: flex;
+animation-name: carrusel;
+animation-duration:100s;
+animation-fill-mode: backwards;
+animation-timing-function: linear 1s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+
+
+position: relative;
+}
+
+@keyframes carrusel{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-800vw);
+    }
+}
 
 .Aboutwe{
     display: flex;
