@@ -436,6 +436,12 @@ header a:hover{
     
     overflow-y: hidden;
     display: flex;
+    animation-name: carrusel;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transition: all 1s;
     
 }
 .CarruselAbout{
@@ -448,7 +454,7 @@ header a:hover{
     }
     100%{
         transform: translateX(-500vw);
-        transition: all 1s;
+        
     }
     
 } 
@@ -464,13 +470,14 @@ header a:hover{
     height: 100vh;
     overflow-y: hidden;
     display: flex;
-    animation-name: carrusel;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+    
         
-}   
+}  
+
+.carruselCen:hover{
+
+    animation-play-state: paused;
+}
 
 
 .Aboutwe .TextAbout{
