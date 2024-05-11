@@ -57,3 +57,17 @@ logo.style.display = logo.style.display === 'flex' ? 'none' : 'flex'
 
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+    const carruselout = document.querySelectorAll(".Aboutwe");
+
+    carruselout.addEventListener("mouseover", () => {
+        carruselout.style.animationPlayState = "paused";
+        console.log("si funciona")
+    });
+
+    carruselout.addEventListener("mouseout", () => {
+        carruselout.style.animationPlayState = "running";
+        console.log("salida")
+    });
+});
+
