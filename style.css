@@ -433,25 +433,24 @@ header a:hover{
 /* ABOUT WE */
 
 .carruselCen{
+    position: relative;
+    overflow: hidden;
     display: flex;
-animation-name: carrusel;
-animation-duration:100s;
-animation-fill-mode: backwards;
-animation-timing-function: linear 1s;
-animation-delay: 2s;
-animation-iteration-count: infinite;
-
-
-position: relative;
+    animation-name: carrusel;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes carrusel{
     0%{
         transform: translateX(0);
     }
-    100%{
-        transform: translateX(-800vw);
+    99%{
+        transform: translateX(-100vw);
     }
+    
 }
 
 .Aboutwe{
@@ -492,11 +491,12 @@ h4{
     overflow-y: hidden;
 }
 .CarruselAbout::-webkit-scrollbar {
-	width: 5px;
+	height: 5px;
+    
 }
 
 .CarruselAbout::-webkit-scrollbar-thumb {
-	background-color: #ff0011ab;
+	background-color: #ff00112e;
   background-size: cover;
   background-position: center;
 	border-radius: 5px;
