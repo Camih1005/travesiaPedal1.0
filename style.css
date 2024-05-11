@@ -433,25 +433,25 @@ header a:hover{
 /* ABOUT WE */
 
 .carruselCen{
-    position: relative;
-    overflow: hidden;
+    
+    overflow-y: hidden;
     display: flex;
-    animation-name: carrusel;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes carrusel{
-    0%{
-        transform: translateX(0);
-    }
-    99%{
-        transform: translateX(-100vw);
-    }
     
 }
+.CarruselAbout{
+    width: 800vw;
+}
+
+ @keyframes carrusel{
+    0%{
+        transform: translateX(900px);
+    }
+    100%{
+        transform: translateX(-500vw);
+        transition: all 1s;
+    }
+    
+} 
 
 .Aboutwe{
     display: flex;
@@ -462,10 +462,16 @@ header a:hover{
     top: 200px;
     width: 100vw;
     height: 100vh;
-    column-gap: 10px;
-    margin: 0 auto;
+    overflow-y: hidden;
+    display: flex;
+    animation-name: carrusel;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
         
 }   
+
 
 .Aboutwe .TextAbout{
     color: rgb(255, 255, 255);
