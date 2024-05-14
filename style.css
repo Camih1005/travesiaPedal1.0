@@ -444,8 +444,16 @@ header a:hover{
     transition: all 1s;
     
 }
+
+.imgAltura{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .CarruselAbout{
     width: 800vw;
+    height: 10vh;
 }
 
  @keyframes carrusel{
@@ -467,12 +475,13 @@ header a:hover{
     margin: 0 auto;
     top: 200px;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-y: hidden;
     display: flex;
     
         
-}  
+} 
+
 
 .carruselCen:hover{
 
@@ -975,31 +984,22 @@ transition: 0.2s ease-out all;
     height: 100vh;
     
 }
- .Aboutwe{
-   height: 100vh;
-   margin: 5px;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-} 
+
 .Aboutwe img{
     width: 100vw;
     height: auto;
     margin: 15px;
 }
-.imgAbout{
-    width: auto;
-    height: auto;
-    overflow: hidden;
-}
+
 .Aboutwe p{
   font-size: 15px;  
 }
-.imga1{
-    display: none;
+
+.carruselCen{
+gap: 40px;
+
 }
+
 .viewmore{
     bottom: 50px;
 }
@@ -1045,4 +1045,25 @@ display: none;
     }
 }
 
-} 
+@keyframes carrusel{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-500vw);
+        
+    }
+    
+
+}
+
+/* .carruselCen:active{
+
+    animation-play-state: paused;
+}
+
+.carruselCen:hover{
+
+    animation-play-state: running;
+} */
+}

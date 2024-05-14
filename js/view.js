@@ -71,3 +71,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/* doc cargado*/ 
+document.addEventListener("DOMContentLoaded", function() {
+    var elementosAnimados = document.querySelectorAll(".animacion");
+    elementosAnimados.forEach(function(elemento) {
+      elemento.classList.add("cargado");
+    });
+  });
