@@ -982,6 +982,7 @@ transition: 0.2s ease-out all;
 }
 .CarruselAbout{
     height: 100vh;
+    overflow: hidden;
     
 }
 
